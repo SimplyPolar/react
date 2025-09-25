@@ -4,25 +4,37 @@
   <meta charset="UTF-8">
   <title>Portafolio - Alex</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+
+  <!-- Botón Dark Mode -->
+  <div class="fixed top-5 right-5 z-50">
+    <button id="theme-toggle" class="px-4 py-2 rounded-lg border border-gray-400 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-md transition-colors hover:scale-105">
+      🌙 Dark Mode
+    </button>
+  </div>
 
   <!-- Header -->
-  <header class="bg-white shadow-md">
+  <header class="bg-white dark:bg-gray-800 shadow-md transition-colors">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
-      <h1 class="text-2xl font-bold text-blue-600">Alex Carrasco</h1>
+      <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Alex Carrasco</h1>
       <nav class="space-x-6">
-        <a href="#about" class="hover:text-blue-600">Sobre mí</a>
-        <a href="#projects" class="hover:text-blue-600">Proyectos</a>
-        <a href="#contact" class="hover:text-blue-600">Contacto</a>
+        <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre mí</a>
+        <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyectos</a>
+        <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-blue-700 dark:to-indigo-800 text-white">
     <h2 class="text-4xl font-bold mb-4">Hola, soy Alex Carrasco👋</h2>
-    <p class="text-lg max-w-2xl mx-auto">
+    <p class="text-lg max-w-2xl mx-auto text-gray-100">
       Soy un Técnico informático con experiencia en soporte, redes y CCTV. Estoy estudiando Ing. en Informática y voy en camino al análisis de datos.
       Actualmente estoy orientado al soporte técnico, redes y sistemas.
       Me interesa el desarrollo de Software y actualmente estoy aprendiendo tecnologías como React, Power BI, SAP, etc. Busco un enfoque futuro en ciencia de datos.
@@ -31,42 +43,48 @@
 
   <!-- Sobre mí -->
   <section id="about" class="max-w-4xl mx-auto py-16 px-5">
-    <h3 class="text-2xl font-bold mb-6 text-blue-600">Sobre mí</h3>
-    <p class="text-gray-700 leading-relaxed">
-      
-    </p>
+    <h3 class="text-2xl font-bold mb-6 text-blue-600 dark:text-blue-400">Habilidades y Herramientas</h3>
+    <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+      <li><strong class="text-gray-900 dark:text-gray-100">Administración de Redes:</strong> MikroTik, Ubiquiti Unifi, Fortinet, Yeastar (Telefonía IP), Cisco básico, cableado estructurado y redes WiFi.</li>
+      <li><strong class="text-gray-900 dark:text-gray-100">Seguridad Informática:</strong> Firewalling, segmentación de redes, control de accesos, CCTV (Hikvision, NVRs), políticas de seguridad de endpoints.</li>
+      <li><strong class="text-gray-900 dark:text-gray-100">Automatización y Domótica:</strong> Integración de Tuya Smart en sistemas audiovisuales, proyección y luminaria.</li>
+      <li><strong class="text-gray-900 dark:text-gray-100">Gestión de Sistemas:</strong> Google Workspace, Active Directory, ServiceNow, GeoVictoria, soporte en Microsoft 365 y Azure básico.</li>
+      <li><strong class="text-gray-900 dark:text-gray-100">Desarrollo y Datos:</strong> Python, Ionic, Angular, SQL, experiencia inicial en análisis de datos y Power BI.</li>
+      <li><strong class="text-gray-900 dark:text-gray-100">Soporte Técnico:</strong> Instalación, configuración y mantenimiento de hardware, software, servidores y periféricos.</li>
+      <li><strong class="text-gray-900 dark:text-gray-100">Videoconferencias y Colaboración:</strong> Zoom, Webex, Microsoft Teams.</li>
+    </ul>
   </section>
 
   <!-- Proyectos -->
-  <section id="projects" class="bg-white py-16">
+  <section id="projects" class="bg-white dark:bg-gray-800 py-16 transition-colors">
     <div class="max-w-6xl mx-auto px-5">
-      <h3 class="text-2xl font-bold mb-10 text-blue-600">Proyectos</h3>
+      <h3 class="text-2xl font-bold mb-10 text-blue-600 dark:text-blue-400">Proyectos</h3>
       <div class="grid md:grid-cols-3 gap-8">
         
         <!-- Proyecto 1 -->
-        <div class="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+        <div class="bg-gray-50 dark:bg-gray-700 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
           <img src="https://picsum.photos/400/200" alt="Proyecto 1" class="w-full h-40 object-cover">
           <div class="p-5">
-            <h4 class="text-lg font-bold mb-2">Administracion de Red en Colegio</h4>
-            <p class="text-gray-600 text-sm">Configuración de MikroTik y Unifi para desplegar, ampliar y mejorar la estabilidad de la red.</p>
+            <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Administración de Red en Colegio</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Configuración de MikroTik y Unifi para desplegar, ampliar y mejorar la estabilidad de la red.</p>
           </div>
         </div>
 
         <!-- Proyecto 2 -->
-        <div class="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+        <div class="bg-gray-50 dark:bg-gray-700 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
           <img src="https://picsum.photos/401/200" alt="Proyecto 2" class="w-full h-40 object-cover">
           <div class="p-5">
-            <h4 class="text-lg font-bold mb-2">Gestión de CCTV</h4>
-            <p class="text-gray-600 text-sm">Implementación y administración de sistemas de videovigilancia HikVision en entornos escolares.</p>
+            <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Gestión de CCTV</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Implementación y administración de sistemas de videovigilancia HikVision en entornos escolares.</p>
           </div>
         </div>
 
         <!-- Proyecto 3 -->
-        <div class="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
+        <div class="bg-gray-50 dark:bg-gray-700 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
           <img src="https://picsum.photos/402/200" alt="Proyecto 3" class="w-full h-40 object-cover">
           <div class="p-5">
-            <h4 class="text-lg font-bold mb-2">Automatización de Proyectores</h4>
-            <p class="text-gray-600 text-sm">Se implementa un sistema automatizado para la gestión de proyectores en aulas mediante una aplicación controlada vía red, utilizando Tuya Smart para encendido remoto y monitoreo del uso.</p>
+            <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Automatización de Proyectores</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Sistema automatizado para gestión de proyectores usando Tuya Smart para encendido remoto y monitoreo del uso.</p>
           </div>
         </div>
 
@@ -76,15 +94,38 @@
 
   <!-- Contacto -->
   <section id="contact" class="max-w-4xl mx-auto py-16 px-5 text-center">
-    <h3 class="text-2xl font-bold mb-6 text-blue-600">Contacto</h3>
-    <p class="mb-4">📧 alexcarrascov16@gmail.com</p>
-    <p>📱 +56 9 8373 3479</p>
+    <h3 class="text-2xl font-bold mb-6 text-blue-600 dark:text-blue-400">Contacto</h3>
+    <p class="mb-4 text-gray-700 dark:text-gray-300">📧<a href="mailto:alexcarrascov16@gmail.com" class="underline hover:text-blue-500 dark:hover:text-blue-400">alexcarrascov16@gmail.com</a></p>
+    <p class="text-gray-700 dark:text-gray-300">📱<a href="https://wa.me/56983733479" target="_blank" class="underline hover:text-green-500 dark:hover:text-green-400">+56 9 8373 3479</a></p>
+    <p class="text-gray-700 dark:text-gray-300"><a href="https://www.linkedin.com/in/alex-carrasco-v/" target="_blank" class="underline hover:text-green-500 dark:hover:text-green-400">LinkedIn</a></p>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-5">
-    <p>&copy; 2025 - Hecho por Alex Carrasco</p>
+  <footer class="bg-gray-800 dark:bg-gray-950 text-white text-center py-5">
+    <p>&copy; 2025 - Alex Carrasco | Calama, Chile</p>
   </footer>
 
+  <!-- Script Dark Mode -->
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    
+    // Cargar preferencia guardada
+    if (localStorage.getItem('theme') === 'dark') {
+      html.classList.add('dark');
+      toggleButton.textContent = "☀️ Light Mode";
+    }
+    
+    toggleButton.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      if (html.classList.contains('dark')) {
+        toggleButton.textContent = "☀️ Light Mode";
+        localStorage.setItem('theme', 'dark');
+      } else {
+        toggleButton.textContent = "🌙 Dark Mode";
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
 </body>
 </html>
