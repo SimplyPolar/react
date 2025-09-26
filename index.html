@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - Alex C.V</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,50 +15,50 @@
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
 
   <!-- Botón Dark Mode -->
-  <div class="fixed top-5 right-5 z-50">
-    <button id="theme-toggle" class="px-4 py-2 rounded-lg border border-gray-400 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-md transition-colors hover:scale-105">
-      🌙 Dark Mode
+  <div class="fixed bottom-3 right-3 z-50">
+    <button id="theme-toggle" class="px-3 py-2 text-sm rounded-lg border border-gray-400 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-md transition-colors hover:scale-105">
+      🌙 Modo Oscuro
     </button>
   </div>
 
   <!-- Header -->
   <header class="bg-white dark:bg-gray-800 shadow-md transition-colors">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
-      <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Alex Carrasco</h1>
-      <nav class="space-x-6">
-        <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Habilidades y Herramientas</a>
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center p-3 sm:p-5 gap-3">
+      <h1 class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400">Alex Carrasco</h1>
+      <nav class="flex flex-wrap gap-3 sm:gap-6 text-sm sm:text-base">
+        <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Habilidades</a>
         <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyectos</a>
         <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contacto</a>
       </nav>
     </div>
   </header>
 
-<!-- Hero con imagen de fondo -->
-<section class="relative text-center py-20 text-white overflow-hidden">
-  <!-- Imagen de fondo con blur -->
-  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-       style="background-image: url('https://i.postimg.cc/zvbxqkJ1/360-F-443655165-o-Ulck-Df-Lp-ED2-V9u-YEyw-TQv-BW20ue-Ga-Mz.jpg')">
-  </div>
-  
-  <!-- Overlay con blur -->
-  <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
-  
-  <!-- Contenido por encima -->
-  <div class="relative z-10">
-    <img src="https://i.postimg.cc/wj3RXY4r/Logo-de-Alex.png" alt="Alex Carrasco" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover bg-white">
-    <h2 class="text-4xl font-bold mb-4">Hola! soy Alex Carrasco👋</h2>
-    <h1 class="text-1xl font-bold mb-4">Técnico informático con experiencia en soporte, redes y CCTV.</h1>
-    <p class="text-lg max-w-2xl mx-auto text-gray-100">
-      Soy un profesional orientado al soporte técnico, redes y sistemas.
-      Actualmente estoy cursando Ing. en Informática y voy en camino al análisis de datos. Me interesa el desarrollo de Software y actualmente estoy adquiriendo conocimiento en tecnologías como React, Power BI, SAP, etc. Busco un enfoque futuro en ciencia o analítica de datos.
-    </p>
-  </div>
-</section>
+  <!-- Hero con imagen de fondo -->
+  <section class="relative text-center py-12 sm:py-20 text-white overflow-hidden">
+    <!-- Imagen de fondo con blur -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+         style="background-image: url('https://i.postimg.cc/zvbxqkJ1/360-F-443655165-o-Ulck-Df-Lp-ED2-V9u-YEyw-TQv-BW20ue-Ga-Mz.jpg')">
+    </div>
+    
+    <!-- Overlay con blur -->
+    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+    
+    <!-- Contenido por encima -->
+    <div class="relative z-10 px-4">
+      <img src="https://i.postimg.cc/wj3RXY4r/Logo-de-Alex.png" alt="Alex Carrasco" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-4 sm:mb-6 border-4 border-white shadow-lg object-cover bg-white">
+      <h2 class="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">Hola! soy Alex Carrasco👋</h2>
+      <h1 class="text-sm sm:text-xl font-bold mb-3 sm:mb-4">Técnico informático con experiencia en soporte, redes y CCTV.</h1>
+      <p class="text-sm sm:text-lg max-w-2xl mx-auto text-gray-100 px-2">
+        Soy un profesional orientado al soporte técnico, redes y sistemas.
+        Actualmente estoy cursando Ing. en Informática y voy en camino al análisis de datos. Me interesa el desarrollo de Software y actualmente estoy adquiriendo conocimiento en tecnologías como React, Power BI, SAP, etc. Busco un enfoque futuro en ciencia o analítica de datos.
+      </p>
+    </div>
+  </section>
 
   <!-- Sobre mí -->
-  <section id="about" class="max-w-4xl mx-auto py-16 px-5">
-    <h3 class="text-2xl font-bold mb-6 text-blue-600 dark:text-blue-400">Habilidades</h3>
-    <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+  <section id="about" class="max-w-4xl mx-auto py-12 sm:py-16 px-4 sm:px-5">
+    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-blue-600 dark:text-blue-400">Habilidades</h3>
+    <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
       <li><strong class="text-gray-900 dark:text-gray-100">Administración de Redes:</strong> MikroTik, Ubiquiti Unifi, Fortinet, Yeastar (Telefonía IP), Cisco básico, cableado estructurado y redes WiFi.</li>
       <li><strong class="text-gray-900 dark:text-gray-100">Seguridad Informática:</strong> Firewalling, segmentación de redes, control de accesos, CCTV (Hikvision, NVRs), políticas de seguridad de endpoints.</li>
       <li><strong class="text-gray-900 dark:text-gray-100">Automatización y Domótica:</strong> Integración de Tuya Smart en sistemas audiovisuales, proyección y luminaria.</li>
@@ -68,102 +69,101 @@
   </section>
 
   <!-- Tech Stack Moderno -->
-  <section id="about" class="max-w-6xl mx-auto py-20 px-5">
-    <div class="flex flex-col lg:flex-row gap-16">
+  <section class="max-w-6xl mx-auto py-12 sm:py-20 px-4 sm:px-5">
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-16">
       
       <!-- Lado izquierdo - Título -->
       <div class="lg:w-1/2">
-        <h2 class="text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <h2 class="text-3xl sm:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-3 sm:mb-4">
           Herramientas de<br>
           <span class="text-blue-600 dark:text-blue-400">Desarrollo</span>
         </h2>
-        <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">-</p>
+        <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8">Mi stack tecnológico</p>
         
         <!-- Grid de tecnologías -->
-        <div class="grid grid-cols-5 gap-4 mb-8">
+        <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 mb-6 sm:mb-8">
 
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)"">
-            <i class="devicon-python-plain text-4xl text-blue-500 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">Python</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-python-plain text-2xl sm:text-4xl text-blue-500 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">Python</div>
           </div>
 
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
-            <i class="devicon-react-original text-4xl text-cyan-400 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">React</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-react-original text-2xl sm:text-4xl text-cyan-400 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">React</div>
           </div>
 
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
-            <i class="devicon-pandas-plain text-4xl text-red-600 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">Pandas</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-pandas-plain text-2xl sm:text-4xl text-red-600 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">Pandas</div>
           </div>
 
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
-            <i class="devicon-mysql-plain text-4xl text-blue-600 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">MySQL</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-mysql-plain text-2xl sm:text-4xl text-blue-600 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">MySQL</div>
           </div>
 
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
-            <i class="devicon-javascript-plain text-4xl text-yellow-500 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">JavaScript</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-javascript-plain text-2xl sm:text-4xl text-yellow-500 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">JavaScript</div>
           </div>
           
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
-            <i class="devicon-html5-plain text-4xl text-orange-600 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">HTML5</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-html5-plain text-2xl sm:text-4xl text-orange-600 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">HTML5</div>
           </div>
 
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
-            <i class="devicon-tailwindcss-original text-4xl text-blue-500 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">Tailwind CSS</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-tailwindcss-original text-2xl sm:text-4xl text-blue-500 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">Tailwind CSS</div>
           </div>
 
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
-            <i class="devicon-nodejs-plain text-4xl text-green-600 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">NodeJS</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-nodejs-plain text-2xl sm:text-4xl text-green-600 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">NodeJS</div>
           </div>
 
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
-            <i class="devicon-git-plain text-4xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">Git</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-git-plain text-2xl sm:text-4xl text-red-500 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">Git</div>
           </div>
           
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
-            <i class="devicon-numpy-plain colored text-4xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
-            <div class="tooltip absolute -top-100 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-200 pointer-events-none">NumPy</div>
+          <div class="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer group relative" onclick="toggleTooltip(this)">
+            <i class="devicon-numpy-plain colored text-2xl sm:text-4xl text-blue-400 group-hover:scale-110 transition-transform duration-300 block text-center"></i>
+            <div class="tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs sm:text-sm opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap">NumPy</div>
           </div>
 
         </div>
       </div>
 
-
       <!-- Lado derecho - Especialidades -->
-      <div class="lg:w-1/2 space-y-6">
-        <div class="flex items-center gap-4 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all">
-          <div class="bg-black rounded-full p-3">
-            <div class="text-white text-xl">💻</div>
+      <div class="lg:w-1/2 space-y-4 sm:space-y-6">
+        <div class="flex items-center gap-3 sm:gap-4 bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-lg hover:shadow-xl transition-all">
+          <div class="bg-black rounded-full p-2 sm:p-3 flex-shrink-0">
+            <div class="text-white text-sm sm:text-xl">💻</div>
           </div>
-          <span class="text-lg font-medium text-gray-700 dark:text-gray-300"> Practicando Full Stack</span>
+          <span class="text-sm sm:text-lg font-medium text-gray-700 dark:text-gray-300">Practicando Full Stack</span>
         </div>
         
-        <div class="flex items-center gap-4 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all">
-          <div class="bg-black rounded-full p-3">
-            <div class="text-white text-xl">🌐</div>
+        <div class="flex items-center gap-3 sm:gap-4 bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-lg hover:shadow-xl transition-all">
+          <div class="bg-black rounded-full p-2 sm:p-3 flex-shrink-0">
+            <div class="text-white text-sm sm:text-xl">🌐</div>
           </div>
-          <span class="text-lg font-medium text-gray-700 dark:text-gray-300">Administración de Redes</span>
+          <span class="text-sm sm:text-lg font-medium text-gray-700 dark:text-gray-300">Administración de Redes</span>
         </div>
         
-        <div class="flex items-center gap-4 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all">
-          <div class="bg-black rounded-full p-3">
-            <div class="text-white text-xl">📊</div>
+        <div class="flex items-center gap-3 sm:gap-4 bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-lg hover:shadow-xl transition-all">
+          <div class="bg-black rounded-full p-2 sm:p-3 flex-shrink-0">
+            <div class="text-white text-sm sm:text-xl">📊</div>
           </div>
-          <span class="text-lg font-medium text-gray-700 dark:text-gray-300">Análisis de Datos</span>
+          <span class="text-sm sm:text-lg font-medium text-gray-700 dark:text-gray-300">Análisis de Datos</span>
         </div>
         
-        <div class="flex items-center gap-4 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all">
-          <div class="bg-black rounded-full p-3">
-            <div class="text-white text-xl">🛠️</div>
+        <div class="flex items-center gap-3 sm:gap-4 bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-lg hover:shadow-xl transition-all">
+          <div class="bg-black rounded-full p-2 sm:p-3 flex-shrink-0">
+            <div class="text-white text-sm sm:text-xl">🛠️</div>
           </div>
-          <span class="text-lg font-medium text-gray-700 dark:text-gray-300">Soporte Técnico</span>
+          <span class="text-sm sm:text-lg font-medium text-gray-700 dark:text-gray-300">Soporte Técnico</span>
         </div>
 
       </div>
@@ -171,35 +171,35 @@
   </section>
 
   <!-- Proyectos -->
-  <section id="projects" class="bg-white dark:bg-gray-800 py-16 transition-colors">
-    <div class="max-w-6xl mx-auto px-5">
-      <h3 class="text-2xl font-bold mb-10 text-blue-600 dark:text-blue-400">Proyectos</h3>
-      <div class="grid md:grid-cols-3 gap-8">
+  <section id="projects" class="bg-white dark:bg-gray-800 py-12 sm:py-16 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5">
+      <h3 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-10 text-blue-600 dark:text-blue-400">Proyectos</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
         <!-- Proyecto 1 -->
         <div class="bg-gray-50 dark:bg-gray-700 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
-          <img src="https://i.postimg.cc/prCKbhjt/descarga.avif" alt="Proyecto 1" class="w-full h-40 object-cover">
-          <div class="p-5">
-            <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Administración de Red en Colegio</h4>
-            <p class="text-gray-600 dark:text-gray-300 text-sm">Configuración de MikroTik y Unifi para desplegar, ampliar y mejorar la estabilidad de la red.</p>
+          <img src="https://i.postimg.cc/prCKbhjt/descarga.avif" alt="Proyecto 1" class="w-full h-32 sm:h-40 object-cover">
+          <div class="p-4 sm:p-5">
+            <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Administración de Red en Colegio</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">Configuración de MikroTik y Unifi para desplegar, ampliar y mejorar la estabilidad de la red.</p>
           </div>
         </div>
 
         <!-- Proyecto 2 -->
         <div class="bg-gray-50 dark:bg-gray-700 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
-          <img src="https://i.postimg.cc/9MJfcGL1/banner-service-01.jpg" alt="Proyecto 2" class="w-full h-40 object-cover">
-          <div class="p-5">
-            <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Gestión de CCTV</h4>
-            <p class="text-gray-600 dark:text-gray-300 text-sm">Implementación y administración de sistemas de videovigilancia HikVision en entornos escolares.</p>
+          <img src="https://i.postimg.cc/9MJfcGL1/banner-service-01.jpg" alt="Proyecto 2" class="w-full h-32 sm:h-40 object-cover">
+          <div class="p-4 sm:p-5">
+            <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Gestión de CCTV</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">Implementación y administración de sistemas de videovigilancia HikVision en entornos escolares.</p>
           </div>
         </div>
 
         <!-- Proyecto 3 -->
         <div class="bg-gray-50 dark:bg-gray-700 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
-          <img src="https://i.postimg.cc/ZYw9mhgZ/B-24-FI.png" alt="Proyecto 3" class="w-full h-40 object-cover">
-          <div class="p-5">
-            <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Automatización de Proyectores</h4>
-            <p class="text-gray-600 dark:text-gray-300 text-sm">Sistema automatizado para gestión de proyectores usando Tuya Smart para encendido remoto y monitoreo del uso.</p>
+          <img src="https://i.postimg.cc/ZYw9mhgZ/B-24-FI.png" alt="Proyecto 3" class="w-full h-32 sm:h-40 object-cover">
+          <div class="p-4 sm:p-5">
+            <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Automatización de Proyectores</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">Sistema automatizado para gestión de proyectores usando Tuya Smart para encendido remoto y monitoreo del uso.</p>
           </div>
         </div>
 
@@ -208,16 +208,18 @@
   </section>
 
   <!-- Contacto -->
-  <section id="contact" class="max-w-4xl mx-auto py-16 px-5 text-center">
-    <h3 class="text-2xl font-bold mb-6 text-blue-600 dark:text-blue-400">Contacto</h3>
-    <p class="mb-4 text-gray-700 dark:text-gray-300">📧 <a href="mailto:alexcarrasco@outlook.es" class="underline hover:text-blue-500 dark:hover:text-blue-400">alexcarrasco@outlook.es</a></p>
-    <p class="text-gray-700 dark:text-gray-300">📱 <a href="https://wa.me/56983733479" target="_blank" class="underline hover:text-green-500 dark:hover:text-green-400">+56 9 8373 3479</a></p>
-    <p class="text-gray-700 dark:text-gray-300"><a href="https://www.linkedin.com/in/alex-carrasco-v/" target="_blank" class="underline hover:text-green-500 dark:hover:text-green-400">LinkedIn</a></p>
+  <section id="contact" class="max-w-4xl mx-auto py-12 sm:py-16 px-4 sm:px-5 text-center">
+    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-blue-600 dark:text-blue-400">Contacto</h3>
+    <div class="space-y-2 text-sm sm:text-base">
+      <p class="text-gray-700 dark:text-gray-300">📧 <a href="mailto:alexcarrasco@outlook.es" class="underline hover:text-blue-500 dark:hover:text-blue-400 break-all">alexcarrasco@outlook.es</a></p>
+      <p class="text-gray-700 dark:text-gray-300">📱 <a href="https://wa.me/56983733479" target="_blank" class="underline hover:text-green-500 dark:hover:text-green-400">+56 9 8373 3479</a></p>
+      <p class="text-gray-700 dark:text-gray-300">💼 <a href="https://www.linkedin.com/in/alex-carrasco-v/" target="_blank" class="underline hover:text-blue-500 dark:hover:text-blue-400">LinkedIn</a></p>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 dark:bg-gray-950 text-white text-center py-5">
-    <p>&copy; 2025 - Alex Carrasco | Calama, Chile</p>
+  <footer class="bg-gray-800 dark:bg-gray-950 text-white text-center py-4 sm:py-5">
+    <p class="text-sm sm:text-base">&copy; 2025 - Alex Carrasco | Calama, Chile</p>
   </footer>
 
   <!-- Script Dark Mode -->
@@ -228,43 +230,43 @@
     // Cargar preferencia guardada
     if (localStorage.getItem('theme') === 'dark') {
       html.classList.add('dark');
-      toggleButton.textContent = "☀️ Light Mode";
+      toggleButton.textContent = "Modo Claro ☀️/ Modo Oscuro 🌙";
     }
     
     toggleButton.addEventListener('click', () => {
       html.classList.toggle('dark');
       if (html.classList.contains('dark')) {
-        toggleButton.textContent = "☀️ Light Mode";
+        toggleButton.textContent = "☀️ Modo Claro";
         localStorage.setItem('theme', 'dark');
       } else {
-        toggleButton.textContent = "🌙 Dark Mode";
+        toggleButton.textContent = "🌙 Modo Oscuro";
         localStorage.setItem('theme', 'light');
       }
     });
 
-      function toggleTooltip(element) {
-    const tooltip = element.querySelector('.tooltip');
-    const allTooltips = document.querySelectorAll('.tooltip');
-    
-    allTooltips.forEach(t => {
-      if (t !== tooltip) {
-        t.classList.remove('opacity-100');
-        t.classList.add('opacity-0');
+    function toggleTooltip(element) {
+      const tooltip = element.querySelector('.tooltip');
+      const allTooltips = document.querySelectorAll('.tooltip');
+      
+      allTooltips.forEach(t => {
+        if (t !== tooltip) {
+          t.classList.remove('opacity-100');
+          t.classList.add('opacity-0');
+        }
+      });
+      
+      tooltip.classList.toggle('opacity-0');
+      tooltip.classList.toggle('opacity-100');
+    }
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.group')) {
+        document.querySelectorAll('.tooltip').forEach(t => {
+          t.classList.remove('opacity-100');
+          t.classList.add('opacity-0');
+        });
       }
     });
-    
-    tooltip.classList.toggle('opacity-0');
-    tooltip.classList.toggle('opacity-100');
-  }
-
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.group')) {
-      document.querySelectorAll('.tooltip').forEach(t => {
-        t.classList.remove('opacity-100');
-        t.classList.add('opacity-0');
-      });
-    }
-  });
 
   </script>
 </body>
